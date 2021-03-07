@@ -14,10 +14,10 @@ function App() {
       <header className="App-header">
         <h1>Let's Do This</h1>
       </header>
-        {groupList.map((index, groupList) => (
+        {groupList.map((groupList, index) => (
             <ToDoGroup
-                // key={index}
-                // index={index}
+                key={groupList.index}
+                index={index}
                 group={groupList}
             />
         ))}

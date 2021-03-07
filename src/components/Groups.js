@@ -8,6 +8,7 @@ function ToDoGroup({index, group, item}) {
         <div>
             <div className="Group">
                 {group.title}
+                {/*{index.title}*/}
             </div>
         </div>
     );
