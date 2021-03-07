@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React from 'react';
 import '../App.css';
 //import Todo from "./ToDoList";
 
@@ -7,8 +7,7 @@ function ToDoGroup({index, group, item}) {
     return (
         <div>
             <div className="Group">
-                {group.title}
-                {/*{index.title}*/}
+                <h2>{group.title}</h2>
             </div>
         </div>
     );

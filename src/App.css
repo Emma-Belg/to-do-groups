@@ -3,8 +3,8 @@
 }
 
 .App-header {
+  margin: 0;
   background-color: #282c34;
-  //min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,31 @@
   color: white;
 }
 
+.forms {
+  display: flex;
+  flex-direction: row;
+  margin:10px;
+}
+
+.input {
+  margin: 10px;
+}
+
+.groups {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #0dbaa6, #026357);
+}
+
 .Group {
-  background-color: hotpink;
-  color: red;
+  margin: 20px 10px;
+  padding: 1vw;
+  min-width: 200px;
+  background-color: white;
+  color: #282c34;
+  border-radius: 5px;
 }
