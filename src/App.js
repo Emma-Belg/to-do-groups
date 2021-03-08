@@ -5,16 +5,20 @@ import AddForm from "./components/AddForm";
 
 function App() {
     const [groupList, SetGroupList] = useState([
-        {id:0,
-            title: "To Do"},
-        {id:1,
-            title: "Doing"},
-        {id:2,
-            title: "Done"},
+        {   id:0,
+            group: "To Do"},
+        {   id:1,
+            group: "Doing"},
+        {   id:2,
+            group: "Done"},
     ]);
 
+    {groupList.map((groupName) => (
+       console.log(groupName.group)
+    ))}
+
     const addGroup = text => {
-        const newGroup = [...groupList, {id: groupList.length+1, title: text}];
+        const newGroup = [...groupList, {id: groupList.length+1, group: text}];
         SetGroupList(newGroup);
     };
 
@@ -25,7 +29,6 @@ function App() {
           <div className="forms">
               <AddForm addItem={addGroup}
                        placeholder="Add a new group"/>
-              <AddForm />
           </div>
       </header>
         <div className="groups">
