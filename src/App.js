@@ -38,6 +38,7 @@ function App() {
                     group={groupName}
                 />
             ))}
+            <ToDoGroup group={groupList} />
         </div>
     </div>
   );
